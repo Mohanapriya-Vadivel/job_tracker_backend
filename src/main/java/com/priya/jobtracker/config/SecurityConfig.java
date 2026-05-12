@@ -59,6 +59,7 @@ public class SecurityConfig {
                 "http://localhost:5173",
                 "http://localhost:5174",
                 "https://task-backend-dboo.onrender.com",
+                "https://job-tracker-backend-x4sk.onrender.com",
                 "https://task-frontend-three-eta.vercel.app"
         ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
