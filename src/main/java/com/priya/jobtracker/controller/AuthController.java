@@ -22,6 +22,7 @@ public class AuthController {
 
     @PostMapping("/login")
     public AuthResponseDto login(@Valid @RequestBody LoginRequestDto request) {
+        System.out.println("LOGIN API HIT");
         return authService.login(request);
     }
 }
