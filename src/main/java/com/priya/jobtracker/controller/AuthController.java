@@ -7,7 +7,7 @@ import com.priya.jobtracker.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-@ControllerAdvice
+
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
