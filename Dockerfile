@@ -10,6 +10,4 @@ RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "target/*.jar"]git add .
-                                    git commit -m "Added Dockerfile"
-                                    git push
+CMD ["java", "-jar", "target/*.jar"]
