@@ -54,14 +54,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
 
-//        config.setAllowedOrigins(List.of("http://localhost:5173","https://task-backend-dboo.onrender.com"));
-        config.setAllowedOrigins(List.of(
-                "http://localhost:5173",
-                "http://localhost:5174",
-                "https://task-backend-dboo.onrender.com",
-                "https://job-tracker-backend-x4sk.onrender.com",
-                "https://task-frontend-three-eta.vercel.app"
-        ));
+        config.setAllowedOriginPatterns(List.of("*"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
